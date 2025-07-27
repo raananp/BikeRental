@@ -1,11 +1,19 @@
 import React from 'react';
+import { Container, Typography, Button } from '@mui/material';
 
 function App() {
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>Welcome to Bike Rental</h1>
-      <p>This is the basic React frontend. 🚲</p>
-    </div>
+    <Container maxWidth="sm" style={{ marginTop: '2rem', textAlign: 'center' }}>
+      <Typography variant="h3" gutterBottom>
+        Welcome to Bike Rental
+      </Typography>
+      <Typography variant="body1" gutterBottom>
+        Enjoy your ride with our amazing fleet!
+      </Typography>
+      <Button variant="contained" color="primary">
+        Book Now
+      </Button>
+    </Container>
   );
 }
 
