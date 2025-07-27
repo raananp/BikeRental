@@ -1,12 +1,18 @@
 FROM node:18
+
 WORKDIR /app
 
-# Copy package.json before the rest to leverage Docker cache and avoid ENOENT
-COPY package.json . 
+# Copy only package files first to leverage Docker cache
+COPY package.json package-lock.json ./
+
+# Install dependencies
 RUN npm install
 
-# Then copy the rest of the files
+# Copy the rest of the project
 COPY . .
 
+# Expose the frontend port
 EXPOSE 3000
+
+# Start the React dev server
 CMD ["npm", "start"]
