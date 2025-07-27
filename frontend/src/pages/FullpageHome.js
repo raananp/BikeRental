@@ -15,7 +15,7 @@ const FullpageHome = () => {
         <Box
           sx={{
             height: '100vh',
-            background: 'url(https://www.superbikemag.com/wp-content/uploads/2024/10/464664456_993616752808967_1764383202401192766_n.jpg) center/cover no-repeat',
+            background: 'url(/images/bike1.jpg) center/cover no-repeat',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -56,7 +56,7 @@ const FullpageHome = () => {
         <Box
           sx={{
             height: '100vh',
-            background: 'url(/images/bike3.jpg) center/cover no-repeat',
+            background: 'url(/images/bike1.jpg) center/cover no-repeat',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
